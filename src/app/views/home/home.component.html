@@ -1,0 +1,14 @@
+<app-menu-bar></app-menu-bar>
+<main>
+  <div class="container">
+    <div class="my-5">
+      <div class="row">
+        <ng-container *ngFor="let produto of produtos">
+          <div class="col-4 my-2">
+            <app-card-home [produto]="produto"></app-card-home>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</main>
